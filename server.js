@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 // Serve the HTML page
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 // GET /
 app.get('/api', (req, res) => {
