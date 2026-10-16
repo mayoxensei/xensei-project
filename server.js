@@ -37,11 +37,9 @@ app.post('/user', (req, res) => {
     });
 });
 
-// GET /user/:id
-app.get('/user/:id', (req, res) => {
-    res.json({
-        message: `User ${req.params.id} profile`
-    });
+// GET /
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Handle invalid JSON and other errors
