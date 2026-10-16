@@ -39,7 +39,7 @@ app.post('/user', (req, res) => {
 
 // GET /
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Handle invalid JSON and other errors
