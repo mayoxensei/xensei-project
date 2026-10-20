@@ -36,6 +36,10 @@ app.post('/user', (req, res) => {
         message: `Hello, ${name}!`
     });
 });
+// GET /user/:id
+app.get('/user/:id', (req, res) => {
+    res.send(`User ${req.params.id} profile`);
+});
 
 // GET /
 app.get('/', (req, res) => {
